@@ -1,0 +1,15 @@
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Provider extends Model
+{
+  protected $fillable = ['name', 'rut', 'email', 'active'];
+
+  public function stockMovement()
+  {
+    return $this->hasMany(StockMovement::class, 'id_provider');
+  }
+}

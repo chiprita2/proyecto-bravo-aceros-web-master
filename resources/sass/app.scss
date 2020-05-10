@@ -1,0 +1,41 @@
+@import 'variables';
+@import 'external';
+@import 'bootstrap';
+@import 'style';
+@import 'revolution/settings';
+@import 'revolution/layers';
+@import 'revolution/navigation';
+
+.card {
+  border: 1px #dbdbdb solid;
+  border-radius: 7px;
+
+  &.card-login {
+    margin: 65px 0;
+  }
+  &.card-register {
+    margin: 65px 0;
+  }
+  &.card-repass {
+    margin: 65px 0;
+  }
+  
+  .card-header {
+    padding: 24px;
+  }
+  .card-body {
+    padding: 24px;
+  }
+}
+.page-title .title-bg::before { 
+  background-color: transparent;
+  border: 2px #433970 solid;
+}
+.widget-account {
+  li {
+    .a {
+      padding: 15px 0px;
+      display: inline-block;
+    }
+  }
+}
