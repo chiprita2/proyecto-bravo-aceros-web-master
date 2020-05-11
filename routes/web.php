@@ -13,7 +13,7 @@ use App\Mail\Test;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/* Routes Auth */
+/* Routes Autenticación */
 
 Route::get('iniciar-sesion', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('iniciar-sesion', 'Auth\LoginController@login');
@@ -22,7 +22,7 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 Route::get('registro', 'Auth\RegisterController@showRegistrationForm')->name('register');
 Route::post('registro', 'Auth\RegisterController@register');
 
-/* Routes Password Reset */
+/* Routes Resetear Clave */
 Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
 Route::get('password/reset', 'Auth\ForgotPasswordController@passwordReset')->name('password.request');
 Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
